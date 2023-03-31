@@ -1,0 +1,15 @@
+Follow the Instructions below:
+
+val(): Create a form with two input fields (one for a name and one for an email address). When the user submits the form, use jQuery to display an alert box that says "Thanks [name]! We'll be in touch at [email address]."
+
+html(): Create a button that, when clicked, changes the text of a paragraph to say "Hello world!" using the jQuery html() method.
+
+append(): Create a list of three items. When the user clicks a button, use jQuery to append a fourth item to the list.
+
+prepend(): Create a list of three items. When the user clicks a button, use jQuery to prepend a fourth item to the list.
+
+addClass(): Create a button and a paragraph of text. When the user clicks the button, use jQuery to add a class to the paragraph that changes its color to red.
+
+css(): Create a button and a paragraph of text. When the user clicks the button, use jQuery to change the font size of the paragraph to 20px and its color to blue.
+
+removeClass(): Create a button and a paragraph of text with a class. When the user clicks the button, use jQuery to remove the class from the paragraph, which will change its styling.
