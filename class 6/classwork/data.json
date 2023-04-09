@@ -1,0 +1,7 @@
+{
+    "Oraimo": [
+      { "Category": "WristWatch", "name": "Smart-Watch 10XP", "price": 45000, "Warranty": "12 Months"},
+      { "Category": "Powerbank", "name": "24000W powerbank", "price": 16000, "Warranty": "15 Months"},
+      { "Category": "Charger", "name": "Oraimo cord", "price": 6000, "Warranty": "10 Months"}
+    ]
+  }

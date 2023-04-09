@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+.slider {
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+.slider img {
+  width: 100%;
+  height: 500px;
+}
+.slick-prev:before,
+.slick-next:before{
+color: black;
+} 
+.slick-prev{
+  /* color: red; */
+  left: -40px;
+}
+.slick-next {
+  /* color: red; */
+  right: -40px;
+}

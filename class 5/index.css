@@ -1,0 +1,46 @@
+.list {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 5px;
+  border-radius: 4px;
+}
+input{
+  width: 70%;
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  background-color: gainsboro;
+}
+.btns {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+}
+.list p {
+  margin-left: 10px;
+}
+.delete {
+  background-color: red;
+  /* margin-right: 6px; */
+}
+.edit,
+#save {
+  background-color: rgb(10, 10, 102);
+}
+.complete {
+  background-color: rgb(54, 182, 54);
+}
+
+.line {
+  text-decoration: line-through;
+  color: red;
+}

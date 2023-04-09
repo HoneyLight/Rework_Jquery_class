@@ -1,0 +1,13 @@
+
+{
+  "employees": [
+    { "name": "john", "age": 30, "gender": "Male" },
+    { "name": "Mark", "age": 29, "gender": "Male" },
+    { "name": "Rita", "age": 30, "gender": "Female" }
+  ],
+"workers": [
+    { "name": "john", "age": 30, "gender": "Male" },
+    { "name": "Mark", "age": 29, "gender": "Male" },
+    { "name": "Rita", "age": 30, "gender": "Female" }
+  ]
+}

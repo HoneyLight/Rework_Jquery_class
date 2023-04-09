@@ -1,0 +1,50 @@
+.list {
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+.btns {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns button {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+.list p {
+  margin-left: 10px;
+}
+.red {
+  background-color: rgb(207, 77, 77);
+}
+.blue {
+  background-color: dodgerblue;
+}
+.green {
+  background-color: limegreen;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: red;
+}
+
+#products {
+  background-color: red;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#products div {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+color: white;
+}
