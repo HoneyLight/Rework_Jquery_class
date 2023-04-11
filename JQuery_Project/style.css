@@ -1,185 +1,274 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 3000px;
-    background-color: #fafafa;
+body {
+  height: auto;
+  background-color: #fafafa;
 }
-.flex{
-    display: flex;
-    align-items: center;
+.flex {
+  display: flex;
+  align-items: center;
 }
-.sbw{
-    justify-content: space-between;
+.sbw {
+  justify-content: space-between;
 }
 
 /* nav */
-nav{
-    background-color: white;
-    border: 1px solid black;
-    height: 50px;
+nav {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
 }
-.navbar{
-    width: 94%;
-    margin: auto;
-    padding-top: 12px;
+.navbar {
+  width: 94%;
+  margin: auto;
+  padding-top: 12px;
 }
-.nav1 a{
-    color: black;
-    text-decoration: none;
-    font-size: 12px;
-    margin-left: 25px;
+.nav1 a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 25px;
+  letter-spacing: 1.5px;
 }
-/* .nav1 a:hover{
-    
-} */
-select{
-    border: none;
-    font-size: 10px;
+select {
+  border: none;
+  font-size: 10px;
 }
-/* select::after{
-    border: none;
-} */
-.nav3 img{
-    /* width: 20%; */
-    margin-left: 30px;
+.nav3 img {
+ margin-left: 30px;
 }
 
 /* banner */
-.banner{
-    height: 490px;
-    background-image: url(./img/BOUGUESSA_HOMEPAGE_NEW.webp);
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-size: 100% 100%;
+.banner {
+  height: 490px;
+  background-image: url(./img/BOUGUESSA_HOMEPAGE_NEW.webp);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% 100%;
 }
 
 /* section1 */
-.section1{
-    /* height: 500px; */
-    width: 97%;
-    margin: auto;
-    margin-top: 10px;
+.section1 {
+  width: 97%;
+  margin: auto;
+  margin-top: 10px;
 }
-.section1 .spring{
-    text-align: center;
-    /* font-weight: 100; */
-    line-height: 2;
+.section1 .spring {
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 2;
 }
-.section1 a{
-    color: rgb(64, 62, 62);
+.section1 a {
+  color: rgb(64, 62, 62);
 }
-.section1 .con{
-    margin-top: 2rem;
-    height: 600px;
+.section1 .con {
+  margin-top: 2rem;
+  height: 600px;
 }
-.section1 .con-left{
-    width: 50%;
-    height: 400px;
-    text-align: center;
-    font-size: small;
-    line-height: 3;
+.section1 .con-left {
+  width: 50%;
+  height: 400px;
+  text-align: center;
+  font-size: small;
+  line-height: 3;
 }
-.section1 .con-left a:hover{
-    text-decoration: none;
+.section1 .con-left a:hover {
+  text-decoration: none;
 }
-.section1 .con-left_img{
-    width: 50%;
-    margin: auto;
+.section1 .con-left_img {
+  width: 50%;
+  margin: auto;
 }
-.section1 .con-left_img img{
-    width: 100%;
+.section1 .con-left_img img {
+  width: 100%;
 }
-.section1 .con-right{
-    width: 50%;
-    height: 550px;
-    background-image: url(./img/BOUGUESSA_HOMEPAGE_NEW_1500x1827-min_750x.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.section1 .con-right {
+  width: 50%;
+  height: 550px;
+  background-image: url(./img/BOUGUESSA_HOMEPAGE_NEW_1500x1827-min_750x.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* section2 */
-.section2 .styles{
-    width: 97%;
-    margin: auto;
-    font-size: 14px;
+.section2 {
+  height: 450px;
+  width: 92%;
+  margin: auto;
+  position: relative;
 }
-.section2 .styles div{
-    width: 22%;
-    height: 320px;
+.section2 .styles {
+  font-size: 14px;
+  margin-top: 50px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 2;
 }
-.section2 .styles div img{
-    width: 100%;
-    height: 100%;
+.section2 .styles div {
+  width: 21%;
+  height: 310px;
+  position: relative;
 }
-.section2 .alaa-kaftan .two{
-    display: none;
+.section2 .styles div img {
+  width: 100%;
+  height: 100%;
 }
-.section2 .alaa-kaftan:hover{
-    display: block;
+.section2 .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.6s ease;
 }
-.section2 button{
-    margin-top: 40px;
-    padding: 10px;
-    background-color: #fff;
-    font-size: 12px;
-    border-width: 1px;
+.section2 .back:hover {
+  opacity: 1;
+  cursor: pointer;
 }
-.section2 button a{
-    text-decoration: none;
-    color: black;
+.section2 button {
+  padding: 10px 12px;
+  background-color: #fff;
+  font-size: 12px;
+  border-width: 1px;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+}
+.section2 button a {
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: black;
 }
 
 /* section3 */
-.section3{
-    height: 500px;
-    background-image: url(./img/BOUGUESSA_FW22_3000x1100_8c9c13bb-a5af-4e4f-87e2-40151027821f_1500x-banner.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: 20px 0;
+.section3 {
+  height: 430px;
+  background-image: url(./img/BOUGUESSA_FW22_3000x1100_8c9c13bb-a5af-4e4f-87e2-40151027821f_1500x-banner.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 50px 0 20px 0;
 }
 /* section4 */
-.section4{
-    /* height: 500px; */
-    width: 97%;
-    margin: auto;
-    margin-top: 10px;
+.section4 {
+  width: 97%;
+  margin: auto;
+  margin-top: 10px;
 }
-.section4 p{
-    text-align: center;
+.section4 p {
+  text-align: center;
+  letter-spacing: 2;
 }
-.section4 a{
-    color: rgb(64, 62, 62);
+.section4 a {
+  color: rgb(64, 62, 62);
 }
-.section4 .winter{
-    margin-top: 2rem;
-    height: 600px;
+.section4 .winter {
+  margin-top: 2rem;
+  height: 600px;
 }
-.section4 .winter-left{
-    width: 50%;
-    height: 400px;
-    text-align: center;
-    font-size: small;
-    line-height: 3;
+.section4 .winter-left {
+  width: 50%;
+  height: 400px;
+  text-align: center;
+  font-size: small;
+  line-height: 3;
 }
-.section4 .winter-left a:hover{
-    text-decoration: none;
+.section4 .winter-left a:hover {
+  text-decoration: none;
 }
-.section4 .winter-left_img{
-    width: 50%;
-    margin: auto;
+.section4 .winter-left_img {
+  width: 50%;
+  margin: auto;
 }
-.section4 .winter-left_img img{
-    width: 100%;
+.section4 .winter-left_img img {
+  width: 100%;
 }
-.section4 .winter-right{
-    width: 50%;
-    height: 550px;
-    background-image: url(./img/HOMEPAGE_1500x2220-min_750x-man-shoe.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.section4 .winter-right {
+  width: 50%;
+  height: 550px;
+  background-image: url(./img/HOMEPAGE_1500x2220-min_750x-man-shoe.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* footer */
+.footer {
+  height: 500px;
+  margin-top: 40px;
+  background-color: white;
+  padding: 40px;
+  color: rgb(99, 92, 92);
+  line-height: 2;
+  font-size: 14px;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(123, 112, 112);
+  font-size: 14px;
+}
+/* .footer_1{
+} */
+.footer ul {
+  list-style: none;
+  display: grid;
+  /* grid-template-columns: ; */
+}
+.footer input {
+  padding: 10px 22px 10px 10px;
+}
+.footer button {
+  padding: 10px 12px;
+  background-color: #fff;
+  font-size: 12px;
+  border-width: 1px;
+  letter-spacing: 2;
+}
+.footer .socials {
+  margin: 6rem 0;
+}
+.footer .socials img {
+  margin-left: 15px;
+}
+
+/* register page and sign-in page */
+.create-account, .sign-in {
+  text-align: center;
+  padding-top: 8rem;
+  line-height: 1.7;
+  color: rgb(81, 79, 79);
+}
+.create-account h4, .sign-in h4 {
+    font-weight: lighter;
+    font-size: 17px;
+}
+.create-account p, .sign-in p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.create-account input, .sign-in input {
+  width: 30%;
+  height: 35px;
+  border-width: 1px;
+  padding-left: 6px;
+  background-color: #fafafa;
+  border-color: gainsboro;
+}
+.create-account button, .sign-in button {
+    width: 30%;
+    height: 35px;
+    background-color: #fff;
+    font-size: 12px;
+    border-width: 1px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.sign-in span a{
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+}
+.sign-in span a:hover{
+    color: rgb(81, 79, 79);
+}

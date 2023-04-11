@@ -1,0 +1,17 @@
+{
+  "employees": [
+    { "id": "1", "name": "john", "age": 30, "gender": "Male" },
+    { "id": "2", "name": "Mark", "age": 29, "gender": "Male" },
+    { "id": "3", "name": "Rita", "age": 30, "gender": "Female" }
+  ],
+  "workers": [
+    { "name": "john", "age": 30, "gender": "Male" },
+    { "name": "Mark", "age": 29, "gender": "Male" },
+    { "name": "Rita", "age": 30, "gender": "Female" }
+  ],
+  "products": [
+    { "id": 1, "name": "Flowers", "price": 30, "qty": 1 },
+    { "id": 2, "name": "Bags", "price": 29, "qty": 1 },
+    { "id": 3, "name": "Food", "price": 30, "qty": 1 }
+  ]
+}
