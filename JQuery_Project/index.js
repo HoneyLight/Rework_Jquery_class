@@ -11,9 +11,16 @@ $(document).ready(function(){
           $("#password").val() == "") {
             alert("Enter your details");
           }
-          else{
-            updateLocalStorage();
+          if (
+            $("#fname").val() != "" &&
+            $("#lname").val() != "" &&
+            $("#email").val() != "" &&
+            $("#password").val() != "") {
+              updateLocalStorage();
           }
+          // else{
+          //   updateLocalStorage();
+          // }
     })
 
     $("#login").click(function () {
@@ -26,6 +33,15 @@ $(document).ready(function(){
             updateLocalStorage();
           }
     })
+    $('#viewed-item').on('click', '.noura-item', function() {
+      let view = $('.noura-blazer');
+      $('#viewed').append(view);
+    })
+
+    // $("#viewed-item").click(function() {
+    //   let view = $('.noura-blazer');
+    //   $('#viewed').append(view);
+    // })
 
     function updateLocalStorage() {
         let registerDetails = $("#output").html();
