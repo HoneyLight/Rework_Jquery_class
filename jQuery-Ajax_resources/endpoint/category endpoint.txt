@@ -1,0 +1,13 @@
+GET /categories (Get all categories)
+
+
+POST /category/
+SEND-DATA:
+{"name":"Popular"}
+
+RESPONSE:
+{
+    "_id": "5ee8e1ef3c895b4300de8803",
+    "name": "Popular"
+}
+

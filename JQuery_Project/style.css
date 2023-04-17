@@ -373,9 +373,33 @@ select {
   font-size: 12px;
 }
 .shop_empty .sort {
-  width: 10%;
+  width: 20%;
   border-left: 1px solid #d9d9d9;
   padding-left: 20px;
+  cursor: pointer;
+}
+.sort .sort-menu{
+  display: none;
+}
+.sort:hover .sort-menu{
+  display: block;
+  position: absolute;
+  background-color: #dfdada;
+  margin: 15px 0 0 15px;
+  z-index: 9999999999;
+}
+.sort:hover .sort-menu ul{
+  display: block;
+  margin: 10px;
+  list-style: none;
+}
+.sort:hover .sort-menu ul li{
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+}
+.sort:hover .sort-menu ul li a{
+  color: #646464;
 }
 .shop_main {
   width: 94%;
