@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: auto;
+    background-color: #fafafa;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .sbw {
+    justify-content: space-between;
+  }
+
+  /* navbar */
+  nav {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .navbar {
+    position: relative;
+    width: 92%;
+    margin: auto;
+    padding-top: 8px;
+  }
+  .icons a{
+    color: rgb(106, 105, 105);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .icons{
+    gap: 10px;
+  }
+  .person {
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  .person img{
+    width: 90%;
+    height: 100%;
+  }
+
+  /* section1 */
+  .section1{
+    padding: 80px 30px;
+    justify-content: space-around;
+  }
+  .section1 svg{
+    color: white;
+  }
+  .svg1{
+    border: 1px solid blue;
+    background-color: blue;
+    padding: 3px 7px;
+    border-radius: 6px;
+  }
+  .svg2{
+    border: 1px solid rebeccapurple;
+    background-color: rebeccapurple;
+    padding: 3px 7px;
+    border-radius: 6px;
+  }
+  .svg3{
+    border: 1px solid orangered;
+    background-color: orangered;
+    padding: 3px 7px;
+    border-radius: 6px;
+  }
+  .svg4{
+    border: 1px solid red;
+    background-color: red;
+    padding: 3px 7px;
+    border-radius: 6px;
+  }
+  .section1 .box{
+    width: 22%;
+    height: 80px;
+    background-color: white;
+    justify-content: space-around;
+  }
+  .slide{
+    width: 200px;
+    background-color: whitesmoke;
+    height: 520px;
+    padding: 20px;
+    position: absolute;
+    top: 7;
+    display: none;
+    margin-top: 8px;
+  }
+  .slide a{
+    text-decoration: none;
+    color: #646464;
+  }
+  .slide li{
+    padding-bottom: 10px;
+    list-style: none;
+  }
+  #menu-bar{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+ 
+
+  /* section2 */
+  .section2{
+    text-align: center;
+  }
+  .tabledata{
+    width: 85%;
+    margin: auto;
+  }
+  .tabledata{
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+  }
+ 
+  /* create product page */
+  .create{
+    width: 60%;
+    margin: auto;
+    padding-top: 80px;
+    background-color: whitesmoke;
+  }
+  .create h3{
+    text-align: center;
+  }
+  .form {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .form div {
+    margin-bottom: 10px;
+  }
+  .form div input,
+  .form div select,
+  .form div textarea {
+    width: 100%;
+    border: 1px solid #dedede;
+    padding: 12px 5px;
+    outline: none;
+    display: block;
+    margin-top: 2px;
+  }
+  .form div textarea {
+    height: 100px;
+  }
+  .form button {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    border-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: rebeccapurple;
+    padding: 12px 0;
+    border-radius: 5px;
+  }
+/* grid-template-columns: repeat(3, 1fr) */
+
+  /* shop page */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  .product {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .product a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .product .image{
+    width: 100%;
+    height: 350px;
+  }
+  .product .image img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  .product h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .product p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #3c3c3c;
+    margin-bottom: 10px;
+  }
+  .product h4{
+    letter-spacing: 1.5px;
+  }
+
+  /* Cart */
+  .cart{
+    padding-top: 80px;
+  }
+
+  /* register and sign-in page */
+.create-account,
+.sign-in {
+  text-align: center;
+  padding-top: 80px;
+  line-height: 1.7;
+  color: rgb(81, 79, 79);
+}
+.create-account h4,
+.sign-in h4 {
+  font-weight: lighter;
+  font-size: 17px;
+}
+.create-account p,
+.sign-in p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.create-account input,
+.sign-in input {
+  width: 30%;
+  height: 35px;
+  border-width: 1px;
+  padding-left: 6px;
+  background-color: #fafafa;
+  border-color: gainsboro;
+}
+.create-account button,
+.sign-in button {
+  width: 30%;
+  height: 35px;
+  background-color: rebeccapurple;
+  border-color: rebeccapurple;
+  font-size: 12px;
+  border-width: 1px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: white;
+}
+.sign-in span a {
+  text-decoration: none;
+  color: rgb(34, 33, 33);
+}
+.sign-in span a:hover {
+  color: rgb(81, 79, 79);
+}
