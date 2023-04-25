@@ -2,30 +2,30 @@ $(document).ready(function () {
     $.ajax({
       type: "GET",
       url: "http://159.65.21.42:9000/products",
-      success: function (resp) {
+      success: function (response) {
         let arr = [];
-        $(resp).each(function (i, data) {
-          if (data.category == "people") {
+        $(response).each(function (i, data) {
+          if (data.category == "bouguessa") {
             arr.push(data);
             console.log([data].length);
-            let result = `
+            let myShop = `
                   <div class="product">
-                  <a href='product.html?id=${data._id}'}>
+                  <a href='cart.html?id=${data._id}'}>
                       <div class="image"><img src='http://159.65.21.42:9000${data.image}' alt="Image" /></div>
                       <h3>${data.name}</h3>
                       <p>${data.description}</p>
-                      <h4>₦${data.price}</h4>
+                      <h4>$${data.price}</h4>
                   </a>
                   </div>
                   `;
-            $("#productsContainer").append(result);
+            $("#productsContainer").append(myShop);
           }
         });
-        $("#totalProducts").html("Total Products:" + arr.length);
+        // $("#totalPrd").html(arr.length);
       },
       error: function (err) {
         console.log(err);
       },
-    });
   });
+});
   

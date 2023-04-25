@@ -25,7 +25,7 @@ ERROR:
 
 ==========================================================
 
-POST  ip-address/login  (User login Endpoint)
+POST  ip-address/login  (User login Endphttp://159.65.21.42:9000/registerhttp://159.65.21.42:9000/registeroint)
 SEND-DATA:
 {
     "email": "jame@gmailsa.com",

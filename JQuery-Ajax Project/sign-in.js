@@ -1,22 +1,20 @@
 $(document).ready(function() {
 
-    $("#create-userbtn").click(function () {
+    $("#login").click(function () {
         if (
-          $("#name").val() == "" ||
-          $("#phonenumber").val() == "" ||
           $("#email").val() == "" ||
           $("#password").val() == ""
         ) {
           alert("Enter your details");
         }
         else {
-          alert('Account created sucessfully')
+          alert('Login sucessful')
         }
       });
 
-    $($('#create-userbtn')).on('click', function (e) {
+    $($('#login')).on('click', function (e) {
         e.preventDefault();
-        let myForm = $('.userForm')[0];
+        let myForm = $('.loginForm')[0];
         let myData = new FormData(myForm);
 
         $.ajax({
@@ -30,7 +28,7 @@ $(document).ready(function() {
                 console.log(resp);
             },
             error: function (err) {
-                // alert('User exists');
+                // alert("email or password does not exist");
                 console.log(err);
             },
         });

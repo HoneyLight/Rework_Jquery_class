@@ -16,14 +16,14 @@
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
                 </button>
-                <div id="slide" class="slide">
+                <div id="slide" class="slide purple">
                     <ul>
                         <a href="dashboard.html"><li>Dashboard</li></a>
-                        <a href="shop-page.html"><li>shop page</li></a>
+                        <a href="admin-prdpage.html"><li>Admin Product Page</li></a>
+                        <a href="shop-page.html"><li>Shop page</li></a>
                         <a href="create-product.html"><li>Create Product</li></a>
-                        <a href="cart.html"><li>cart page</li></a>
-                        <a href="create-user.html"><li>create user</li></a>
-                        <a href="register.html"><li>Create Account</li></a>
+                        <a href="cart.html"><li>Cart page</li></a>
+                        <a href="create-user.html"><li>Create user</li></a>
                         <a href="sign-in.html"><li>Sign-In</li></a>
                     </ul>
                 </div>
@@ -53,38 +53,37 @@
             <form class="form">
                 <div>
                     <label for="">Product Name</label><br>
-                    <input type="text" placeholder="Product Name" name="name"><br>
+                    <input type="text" placeholder="Product Name" name="name" id="name"><br>
                 </div>
                 <div>
                     <label for="">Product Category</label>
-                    <select name="category" id="">
+                    <select name="category" id="category">
                         <option value="bouguessa">bouguessa</option>
                     </select> <br>
                 </div>   
                 <div>
                     <label for="">Product Price</label><br>
-                    <input type="text" placeholder="Price"><br>
+                    <input type="text" placeholder="Price" name="price" id="price"><br>
                 </div>            
                 <div>
                     <label for="">Product Quantity</label><br>
-                    <input type="text" name="quantity" id=""><br>
+                    <input type="text" name="quantity" id="quantity"><br>
                 </div>
                 <div>
                     <label for="">Product Image</label><br>
-                    <input type="file" name="" id=""><br>
+                    <input type="file" name="image" id="image"><br>
                 </div>
                 <div>
                     <label for="">Product Description</label><br>
-                    <textarea name="description" placeholder="Describe product with specifics..."></textarea>
+                    <textarea name="description" placeholder="Describe product with specifics..." id="description"></textarea>
                 </div>
                 <button id="create-prdbtn">Create Product</button>
             </form>
         </div>
     </main>
+    <script src="home.js"></script>
+    <script src="create-prd.js"></script>
 </body>
-<script src="home.js"></script>
-<script src="index.js"></script>
-<script src="create-prd.js"></script>
+<!-- <script src="index.js"></script> -->
 </html>
 
-<!-- </html>id="" cols="30" rows="10" -->
